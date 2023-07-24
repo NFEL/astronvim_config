@@ -10,4 +10,12 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.yaml" },
   
+  { import = "astrocommunity.programming-language-support.rest-nvim" },
+  { import = "astrocommunity.programming-language-support.nvim-jqx" },
+  
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  
+  
+
+  
 }
