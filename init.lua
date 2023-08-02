@@ -1,3 +1,6 @@
+-- local lspconfig = require 'lspconfig'
+-- local configs = require 'lspconfig.configs'
+
 return {
   -- Configure AstroNvim updates
   updater = {
@@ -17,8 +20,15 @@ return {
     },
   },
 
-  -- Set colorscheme to use
-  colorscheme = "astrodark",
+  -- colorscheme = "catppuccin",
+  plugins = {
+    {
+      "rose-pine/neovim",
+      name = "rose-pine",
+      config = function() require("rose-pine").setup {} end,
+    },
+  },
+  colorscheme = "rose-pine",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -32,16 +42,15 @@ return {
       -- control auto formatting on save
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
-        allow_filetypes = { -- enable format on save for specified filetypes only
-          "go",
-          "pyhon",
-          "py",
-          "sol",
-          "solidity",
-          "ts",
-          "js"
-        },
+        -- allow_filetypes = { -- enable format on save for specified filetypes only
+        --   "go",
+        --   "pyhon",
+        --   "solidity",
+        --   "js",
+        --   "lua"
+        -- },
         ignore_filetypes = { -- disable format on save for specified filetypes
+          "julia",
           -- "python",
         },
       },
@@ -49,7 +58,7 @@ return {
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
         -- "lua_ls",
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 4000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
