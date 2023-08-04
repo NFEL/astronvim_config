@@ -23,12 +23,17 @@ return {
   -- colorscheme = "catppuccin",
   plugins = {
     {
+      "catppuccin/nvim",
+      name = "catppuccin",
+      config = function() require("catppuccin").setup {} end,
+    },
+    {
       "rose-pine/neovim",
       name = "rose-pine",
       config = function() require("rose-pine").setup {} end,
     },
   },
-  colorscheme = "rose-pine",
+  colorscheme = "rose-pine-moon",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
