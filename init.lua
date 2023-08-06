@@ -102,5 +102,7 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    -- "highlight Normal guibg=NONE"
+    vim.cmd "highlight Normal guibg=NONE"
   end,
 }
