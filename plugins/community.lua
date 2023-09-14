@@ -14,30 +14,25 @@ return {
   { import = "astrocommunity.programming-language-support.rest-nvim" },
   { import = "astrocommunity.programming-language-support.nvim-jqx" },
 
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.editing-support.comment-box-nvim" },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
+
   { import = "astrocommunity.media.vim-wakatime" },
   { import = "astrocommunity.media.drop-nvim" },
 
+  { import = "astrocommunity.completion.codeium-vim" },
+  { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.color.twilight-nvim" },
+
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
-  { -- further customize the options set by the community
-    "catppuccin",
-    opts = {
-      integrations = {
-        sandwich = false,
-        noice = true,
-        mini = true,
-        leap = true,
-        markdown = true,
-        neotest = true,
-        cmp = true,
-        overseer = true,
-        lsp_trouble = true,
-        rainbow_delimiters = true,
-      },
-    },
-  },
+  { import = "astrocommunity.colorscheme.dracula-nvim" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   {
     "m4xshen/smartcolumn.nvim",
