@@ -54,5 +54,6 @@ return {
   polish = function()
     -- Making Bg transparent \$_$/
     vim.cmd "highlight Normal guibg=NONE"
+    vim.keymap.set("x", "p", function() return 'pgv"' .. vim.v.register .. "y" end, { remap = false, expr = true })
   end,
 }
