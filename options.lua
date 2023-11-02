@@ -12,6 +12,7 @@ return {
   g = {
     mapleader = " ", -- sets vim.g.mapleader
     autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
+    loaded_syntastic_dart_dartanalyzer_checker = 0,
     cmp_enabled = true, -- enable completion at start
     autopairs_enabled = true, -- enable autopairs at start
     diagnostics_mode = 1, -- set the visibility of diagnostics in the UI (0=off, 1=only show in status line, 2=virtual text off, 3=all on)
