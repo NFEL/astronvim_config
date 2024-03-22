@@ -18,8 +18,9 @@ return {
 
   -- colorscheme = "rose-pine-moon",
   -- colorscheme = "tokyonight",
-  colorscheme = "kanagawa-dragon",
+  -- colorscheme = "kanagawa-dragon",
   -- colorscheme = "dracula",
+  colorscheme = "catppuccin-frappe",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
